@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовити таксі</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        input, button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        input {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+        button {
+            background-color: #ff7e5f;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #feb47b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Замовити таксі</h1>
+    </header>
+    <div class="container">
+        <form action="#" method="post">
+            <input type="text" name="pickup" placeholder="Адреса подачі" required>
+            <input type="text" name="destination" placeholder="Адреса призначення" required>
+            <input type="text" name="phone" placeholder="Телефон для зв'язку" required>
+            <button type="submit">Замовити</button>
+        </form>
+    </div>
+</body>
+</html>
